@@ -7,35 +7,37 @@ const ListContainer = styled(Container)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     h2 {
         margin-top: 50px;
         padding-left: 70%;
         padding-right: 70%;
-        border-bottom: 1px solid black;
+        color: khaki;
     }
 `;
 
 const FirstH2 = styled.h2`
     padding-left: 70%;
     padding-right: 70%;
-    border-bottom: 1px solid black;
+    margin-bottom: 10px;
 `;
 
 const Item = styled(ListGroupItem)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    background-color: rgba(250, 250, 210, 0.5);
+    border-radius: 10px;
+    margin: 10px;
+
     strong {
         text-align: center;
-        color: black;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 18px;
         padding-bottom: 5px;
         padding-top: 5px;
     }
-    
+
     p {
         font-size: 13px;
     }
@@ -46,25 +48,25 @@ const SkillList: React.FC = () => {
         <ListContainer>
             <FirstH2>Languages</FirstH2>
             <ListGroup>
-                <Item variant="secondary">
-                    <strong>Java</strong>
-                    <p>부트캠프에서 첫 프로그래밍 언어로 학습하였습니다. 객체 지향적인 코드 작성을 위해 지속적인 학습중입니다.</p>
-                </Item>
+                    <Item variant="secondary">
+                        <strong>Java</strong>
+                        <p>부트캠프에서 첫 프로그래밍 언어로 학습하였습니다. 객체 지향적인 코드 작성을 위해 지속적인 학습중입니다.</p>
+                    </Item>
 
-                <Item variant="secondary">
-                    <strong>Kotlin</strong>
-                    <p>Cross Platform App의 백엔드 개발을 위해 사용했던 언어입니다.</p>
-                </Item>
+                    <Item variant="secondary">
+                        <strong>Kotlin</strong>
+                        <p>Cross Platform App의 백엔드 개발을 위해 사용했던 언어입니다.</p>
+                    </Item>
 
-                <Item variant="secondary">
-                    <strong>JavaScript</strong>
-                    <p>간단한 웹페이지의 동적인 기능을 위해 사용중입니다.</p>
-                </Item>
+                    <Item variant="secondary">
+                        <strong>JavaScript</strong>
+                        <p>간단한 웹페이지의 동적인 기능을 위해 사용중입니다.</p>
+                    </Item>
 
-                <Item variant="secondary">
-                    <strong>TypeScript</strong>
-                    <p>React를 이용한 SPA 기반의 웹 프론트엔드 개발을 위해 사용중입니다.</p>
-                </Item>
+                    <Item variant="secondary">
+                        <strong>TypeScript</strong>
+                        <p>React를 이용한 SPA 기반의 웹 프론트엔드 개발을 위해 사용중입니다.</p>
+                    </Item>
             </ListGroup>
 
             <h2>Stacks</h2>
@@ -72,7 +74,7 @@ const SkillList: React.FC = () => {
                 <Item variant="secondary">
                     <strong>Spring Boot</strong>
                     <p>JPA & Hibernate를 이용한 백엔드 개발을 위해 사용 중 입니다.</p>
-                    <p>Spring Data Redis, WebSocket, Spring AMQP, Spring WebClient, QueryDSL 등</p>
+                    <p>Spring Data JPA, Spring Data Redis, WebSocket, Spring AMQP, Spring WebClient, QueryDSL 등</p>
                 </Item>
 
                 <Item variant="secondary">
@@ -112,19 +114,20 @@ const SkillList: React.FC = () => {
                 <Item variant="secondary">
                     <strong>Server & Serverless</strong>
                     <p>Debian & RedHat 기반의 Linux / Windows Server 세팅 경험이 있습니다.</p>
-                    <p>Public Cloud인 AWS를 이용한 Serverless 아키텍처의 구성과 서버 세팅 경험이 있습니다. (Shell Script, 네트워크, 보안 설정 등)</p>
+                    <p>Public Cloud인 AWS를 이용한 Serverless 아키텍처의 구성과 서버 세팅 경험이 있습니다. (Shell Script 작성, 네트워크, 보안 설정 등)</p>
                 </Item>
 
                 <Item variant="secondary">
                     <strong>Docker & Kubernetes</strong>
-                    <p>컨테이너 기반 환경에 익숙하며 Docker, Docker Compose를 주로 사용하며, Private Container Registry를 이용해 이미지를 관리합니다.</p>
+                    <p>컨테이너 기반 환경에 익숙하며 Docker / Docker Compose를 주로 사용하고 Private Container Registry를 이용해 이미지를 관리합니다.</p>
                     <p>Docker Network 구성 & Volumn Mount 등 기본적인 Docker의 사용법을 숙지하고 있습니다.</p>
                     <p>Kubernetes Object들을 이용해 Pod의 HA 구성, Service를 통한 Expose 등 기본적인 사용법을 숙지하고 있습니다.</p>
                 </Item>
 
                 <Item variant="secondary">
                     <strong>CI & CD</strong>
-                    <p>Jenkins Declarative Pipeline & Nginx & Docker를 이용한 트래픽 로드밸런싱과 Blue & Green 무중단 배포를 구현해 본 경험이 있습니다.</p>
+                    <p>Jenkins Declarative Pipeline & Nginx & Docker를 이용한 트래픽 로드밸런싱과 Blue & Green 무중단 배포를 구현해 본 경험이
+                        있습니다.</p>
                     <p>Github Actions를 통한 간단한 CI & CD를 구현해 본 경험이 있습니다.</p>
                     <p>AWS Code Deploy, Pipeline을 이용한 CI & CD를 구현해 본 경험이 있습니다.</p>
                 </Item>
