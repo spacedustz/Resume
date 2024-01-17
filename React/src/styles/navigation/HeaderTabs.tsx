@@ -1,8 +1,10 @@
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import React from "react";
+import Introduce from "../../components/Introduce.tsx";
+import SkillList from "../card/SkillList.tsx";
 
-const JustifiedExample: React.FC = () => {
+const HeaderTabs: React.FC = () => {
     return (
         <Tabs
             defaultActiveKey="profile"
@@ -11,11 +13,11 @@ const JustifiedExample: React.FC = () => {
             justify
         >
             <Tab eventKey="intro" title="Intro">
-                Tab content for Home
+                <Introduce />
             </Tab>
 
             <Tab eventKey="skills" title="Skills">
-                Tab content for Profile
+                <SkillList />
             </Tab>
 
             <Tab eventKey="carrers" title="Carrers">
@@ -33,4 +35,4 @@ const JustifiedExample: React.FC = () => {
     );
 }
 
-export default JustifiedExample;
+export default HeaderTabs;
