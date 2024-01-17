@@ -1,2 +1,3 @@
-# Resume
-이력서
+## Kun Woo Shin's Resume
+
+- React & TypeScript (yarn vite)
