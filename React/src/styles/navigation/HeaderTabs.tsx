@@ -20,7 +20,7 @@ const HeaderTabs: React.FC = () => {
                 <SkillList />
             </Tab>
 
-            <Tab eventKey="carrers" title="Carrers">
+            <Tab eventKey="careers" title="Careers">
                 Tab content for Loooonger Tab
             </Tab>
 
