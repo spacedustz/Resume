@@ -1,14 +1,16 @@
 import React from 'react';
-import Navigation from "./styles/navigation/Navigation.tsx";
 import HeaderTabs from "./styles/navigation/HeaderTabs.tsx";
+import ProfileCard from "./styles/card/ProfileCard.tsx";
+import {RootContainer} from "./styles/container/RootContainer.tsx";
+
 const App: React.FC = () => {
 
-  return (
-    <>
-      <Navigation />
-      <HeaderTabs />
-    </>
-  )
+    return (
+        <RootContainer>
+            <ProfileCard/>
+            <HeaderTabs/>
+        </RootContainer>
+    )
 }
 
 export default App;
