@@ -7,6 +7,7 @@ const CardContainer = styled(Container)`
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 
     img {
         width: 200px;
@@ -48,7 +49,7 @@ const ProfileCard: React.FC = () => {
                 <Card.Body>
                     <Card.Title>신건우</Card.Title>
                     <Card.Text>
-                        안녕하세요, 개발자 신건우입니다.
+                        <strong>안녕하세요, 개발자 신건우입니다.</strong>
                     </Card.Text>
                 </Card.Body>
             </MainCard>
