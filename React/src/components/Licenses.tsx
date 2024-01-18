@@ -3,7 +3,6 @@ import styled from "styled-components";
 import {ListGroupItem, Table} from "react-bootstrap";
 import {ListContainer} from "../styles/container/ListContainer.tsx";
 import {ListItem} from "../styles/tabs/ListItem.tsx";
-import BaseBar from "../styles/bar/BaseBar.tsx";
 
 const StyledTable = styled(Table)`
     table {
