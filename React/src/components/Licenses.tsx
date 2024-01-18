@@ -24,15 +24,15 @@ const StyledTable = styled(Table)`
     }
 
     td:nth-child(1) {
-        width: 5%;
+        width: 15%;
     }
 
     td:nth-child(2) {
-        width: 25%;
+        width: 20%;
     }
 
     td:nth-child(3) {
-        width: 10%;
+        width: 5%;
     }
 
     ul {
@@ -73,10 +73,6 @@ const SubTd = styled.td`
     text-align: center;
 `;
 
-const SubTitle = styled.div`
-    color: #FCFFEE;
-`;
-
 const Licenses: React.FC = () => {
     return (
         <ListContainer>
@@ -87,46 +83,46 @@ const Licenses: React.FC = () => {
                         <thead>
                         <tr>
                             <th>이름</th>
-                            <th>취득일</th>
                             <th>발급 기관</th>
+                            <th>취득일</th>
                         </tr>
                         </thead>
 
                         <tbody>
                         <tr>
-                            <td>리눅스 마스터 1급</td>
+                            <SubTd>리눅스 마스터 1급</SubTd>
+                            <SubTd>(사)한국정보통신진흥협회</SubTd>
                             <SubTd>2022.06</SubTd>
-                            <SubTd>(사)한국정보통신진흥협회</SubTd>
                         </tr>
 
                         <tr>
-                            <td>CKA (Certified Kubernetes Administrator)</td>
-                            <SubTd>2022.02</SubTd>
+                            <SubTd>CKA (Certified Kubernetes Administrator)</SubTd>
                             <SubTd>CNCF (Cloud Native Computing Foundation)</SubTd>
+                            <SubTd>2022.02</SubTd>
                         </tr>
 
                         <tr>
-                            <td>정보처리기능사</td>
+                            <SubTd>정보처리기능사</SubTd>
+                            <SubTd>한국산업인력공단</SubTd>
                             <SubTd>2021.10</SubTd>
-                            <SubTd>한국산업인력공단</SubTd>
                         </tr>
 
                         <tr>
-                            <td>정보기기운용기능사</td>
+                            <SubTd>정보기기운용기능사</SubTd>
+                            <SubTd>한국산업인력공단</SubTd>
                             <SubTd>2021.09</SubTd>
-                            <SubTd>한국산업인력공단</SubTd>
                         </tr>
 
                         <tr>
-                            <td>리눅스 마스터 2급</td>
-                            <SubTd>2021.07</SubTd>
+                            <SubTd>리눅스 마스터 2급</SubTd>
                             <SubTd>(사)한국정보통신진흥협회</SubTd>
+                            <SubTd>2021.07</SubTd>
                         </tr>
 
                         <tr>
-                            <td>네트워크관리사</td>
-                            <SubTd>2021.06</SubTd>
+                            <SubTd>네트워크관리사</SubTd>
                             <SubTd>한국정보통신자격협회</SubTd>
+                            <SubTd>2021.06</SubTd>
                         </tr>
 
                         </tbody>
