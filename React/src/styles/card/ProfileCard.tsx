@@ -49,7 +49,8 @@ const ProfileCard: React.FC = () => {
                 <Card.Body>
                     <Card.Title>신건우</Card.Title>
                     <Card.Text>
-                        <strong>안녕하세요, 개발자 신건우입니다.</strong>
+                        <strong>안녕하세요, 개발자 신건우입니다.</strong><br/>
+                        <strong>총 개발 경력 : 5개월</strong>
                     </Card.Text>
                 </Card.Body>
             </MainCard>
