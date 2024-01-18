@@ -97,7 +97,7 @@ const Licenses: React.FC = () => {
 
                         <tr>
                             <SubTd>CKA (Certified Kubernetes Administrator)</SubTd>
-                            <SubTd>CNCF (Cloud Native Computing Foundation)</SubTd>
+                            <SubTd>Cloud Native Computing Foundation</SubTd>
                             <SubTd>2022.02</SubTd>
                         </tr>
 
