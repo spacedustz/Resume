@@ -45,15 +45,15 @@ const HeaderTabs: React.FC = () => {
                 <Outlet/>
             </Tab>
 
-            <Tab eventKey="careers" title="Careers">
+            <Tab eventKey="careers" title={<span style={activeKey === "careers" ? {color: "lightblue"} : {}}>Careers</span>}>
                 <Outlet/>
             </Tab>
 
-            <Tab eventKey="licenses" title="Licenses">
+            <Tab eventKey="licenses" title={<span style={activeKey === "licenses" ? {color: "lightblue"} : {}}>Licenses</span>}>
                 <Outlet/>
             </Tab>
 
-            <Tab eventKey="educations" title="Educations">
+            <Tab eventKey="educations" title={<span style={activeKey === "educations" ? {color: "lightblue"} : {}}>Educations</span>}>
                 <Outlet/>
             </Tab>
         </TabsStyle>
