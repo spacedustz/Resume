@@ -1,53 +1,35 @@
 import React from "react";
-import {Container} from "react-bootstrap";
+import {IntroContainer} from "../styles/container/IntroContainer.tsx";
 import styled from "styled-components";
 
-const IntroContainer = styled(Container)`
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-
-    div {
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 20px;
-        line-height: 1.5;
-        word-wrap: normal;
-        background-color: rgba(250, 250, 210, 0.5);
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    h3 {
-        color: khaki;
-        margin-bottom: 30px;
-    }
+const SubTitle = styled.strong`
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
 `;
 
 const Introduce: React.FC = () => {
     return (
         <IntroContainer>
-            <h3>
-                <strong>안녕하세요, 신건우입니다.</strong>
-            </h3>
-
             <div>
+                <SubTitle>안녕하세요, 신건우입니다.</SubTitle><br/><br/>
+
                 저는 전혀 다른 직종에서 일을 하다가 우연히 국비 지원 교육을 통해<br/>
-                2021년 3월에 IT를 접하게 되었고, 국비 지원 교육(리눅스, 네트워크 교육)을 받고 시스템 엔지니어로 취업하였습니다.
+                2021년 3월에 IT를 접하게 되었고, 국비 지원 교육(리눅스, 네트워크 교육)을 받고<br/>
+                시스템 엔지니어로 취업하였습니다.
 
                 <br/><br/><br/>
 
+                <SubTitle>개발자로 방향 전환을 하게 된 계기</SubTitle> <br/><br/>
 
-                시스템 엔지니어 관련 만들어진 서비스의 유지 보수 업무를 하던 중 개발자로 방향 전환을 하게 된 계기는,<br/>
+                업무를 하며 만들어진 서비스의 유지 보수 업무를 하던 중,<br/>
                 재직 당시 협력 업체의 Devops팀 업무 범위가 단순히 운영이 아닌<br/>
                 개발과 배포 등 전반적인 IT 업무를 하는 전문적인 모습을 보며 동경하게 되었으며,<br/>
                 직접 기능을 만드는 개발 업무를 배워보고자 퇴사 후 바로 개발 교육을 받고 무사히 수료를 하였습니다.
 
                 <br/><br/><br/>
+
+                <SubTitle>개발에 재미를 느끼다</SubTitle> <br/><br/>
 
                 2022년 8월 처음 개발을 배울때 논리적 & 알고리즘적인 사고에 익숙하지 않아 학습에 많은 어려움이 있었지만,<br/>
                 점점 코드에 익숙해지고 배우면서 어려운 에러를 핸들링 하며 해결을 했을 때 느꼈던 엄청난 쾌감과,<br/>
@@ -62,16 +44,21 @@ const Introduce: React.FC = () => {
 
                 <br/><br/><br/>
 
+                <SubTitle>꾸준함 실천 중 : Github & Blog</SubTitle> <br/><br/>
+
                 짧은 기간에 얼만큼 성장 할 수 있는지는 그 사람이 어떤 사람 인지에 따라,<br/>
                 엄청난 성장의 차이가 있다고 생각하며 이 부분 만큼에 있어서 노력했다고 자신합니다.<br/>
-                그에 대한 근거로,<br/>
-                6개월의 짧은 교육 기간 동안 꾸준히 배운 것을 기록한 기술 블로그 URL을 프로필 사진 옆 링크 버튼으로 첨부 드립니다.
+                그에 대한 근거로, 6개월의 짧은 교육 기간 동안 꾸준히 배운 것을 기록한<br/>
+                기술 블로그 URL과 Github를 상단 Github, Blog 버튼을 눌러서 들어가 보실 수 있습니다.
 
                 <br/><br/><br/>
 
+                <SubTitle>커뮤니케이션의 중요성 인지</SubTitle> <br/><br/>
+
                 그리고, 저는 오버 커뮤니케이션을 지향합니다.<br/>
-                이번 부트캠프 프로젝트에서는 팀원들과 많은 이야기를 나누지 못했고,<br/>
-                이는 곧 프로젝트의 결과물과 직결이 되었습니다.
+                부트캠프 프로젝트 당시 팀원들과 많은 이야기를 나누지 못했고,<br/>
+                이는 곧 프로젝트의 결과물과 직결이 되었습니다.<br/>
+                프로젝트의 실패를 겪으며 커뮤니케이션이 얼마나 중요한 스킬인지 깨닫게 되었습니다.
 
                 <br/><br/><br/>
 
