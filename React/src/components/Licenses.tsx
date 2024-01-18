@@ -106,27 +106,27 @@ const Licenses: React.FC = () => {
                         </tr>
 
                         <tr>
-                            <td>리눅스 마스터 1급</td>
-                            <SubTd>2022.06</SubTd>
+                            <td>정보처리기능사</td>
+                            <SubTd>2021.10</SubTd>
+                            <SubTd>한국산업인력공단</SubTd>
+                        </tr>
+
+                        <tr>
+                            <td>정보기기운용기능사</td>
+                            <SubTd>2021.09</SubTd>
+                            <SubTd>한국산업인력공단</SubTd>
+                        </tr>
+
+                        <tr>
+                            <td>리눅스 마스터 2급</td>
+                            <SubTd>2021.07</SubTd>
                             <SubTd>(사)한국정보통신진흥협회</SubTd>
                         </tr>
 
                         <tr>
-                            <td>리눅스 마스터 1급</td>
-                            <SubTd>2022.06</SubTd>
-                            <SubTd>(사)한국정보통신진흥협회</SubTd>
-                        </tr>
-
-                        <tr>
-                            <td>리눅스 마스터 1급</td>
-                            <SubTd>2022.06</SubTd>
-                            <SubTd>(사)한국정보통신진흥협회</SubTd>
-                        </tr>
-
-                        <tr>
-                            <td>리눅스 마스터 1급</td>
-                            <SubTd>2022.06</SubTd>
-                            <SubTd>(사)한국정보통신진흥협회</SubTd>
+                            <td>네트워크관리사</td>
+                            <SubTd>2021.06</SubTd>
+                            <SubTd>한국정보통신자격협회</SubTd>
                         </tr>
 
                         </tbody>
