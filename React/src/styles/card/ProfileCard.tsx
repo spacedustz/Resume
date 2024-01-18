@@ -4,9 +4,9 @@ import {Container} from "react-bootstrap";
 import styled from "styled-components";
 
 const CardContainer = styled(Container)`
-    border-bottom: 1px solid gray;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 
     img {
         width: 200px;
