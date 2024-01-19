@@ -24,7 +24,8 @@ const HeaderTabs: React.FC = () => {
     const handleSelect = (k: string|null) => {
         if (k) {
             setActiveKey(k);
-            navigate(`/${k}`);
+            navigate(`/${k}`, { replace: true });
+
         }
     }
 
