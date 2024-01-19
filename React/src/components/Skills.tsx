@@ -63,6 +63,7 @@ const SkillList: React.FC = () => {
                 <ListItem variant="secondary">
                     <strong>RTSP & FFmpeg & HLS</strong>
                     <p>브라우저에서 지원하지 않는 RTSP 프로토콜 실시간 영상을 FFmpeg을 이용해 HLS로 변환하여 스트리밍 하였습니다.</p>
+                    <p>Segment / m3u8 File에 대한 HLS List Size등 많은 옵션을 사용하여 Video 변환 Latency 튜닝을 하였습비다.</p>
                 </ListItem>
 
                 <ListItem variant="secondary">
