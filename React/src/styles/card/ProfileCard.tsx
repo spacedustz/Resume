@@ -14,7 +14,7 @@ const colorChange = keyframes`
     }
     100% {
         background-color: rgba(250, 250, 210, 0);
-        color: rgba(250, 250, 210, 0.5);
+        color: rgba(250, 250, 210, 0.9);
     }
 `;
 
@@ -65,7 +65,8 @@ const ProfileCard: React.FC = () => {
                 <Card.Img variant="top" src="../../public/assets/me2.png"/>
                 <Card.Body>
                     <Card.Text>
-                        <strong>안녕하세요, 신입 개발자 신건우입니다.</strong><br/>
+                        <strong>😊 안녕하세요 😊</strong><br/>
+                        <strong>신입 개발자 신건우입니다.</strong>
                     </Card.Text>
                 </Card.Body>
             </MainCard>
