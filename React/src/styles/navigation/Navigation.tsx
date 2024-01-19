@@ -38,6 +38,11 @@ const ImageStyle = styled.img`
     width: 30px;
     height: 30px;
     margin-right: 10px;
+
+    @media (max-width: 768px) {
+        width: 20px;
+        height: 20px;
+    }
 `;
 
 const Navigation: React.FC = () => {
@@ -52,7 +57,7 @@ const Navigation: React.FC = () => {
                             Github</Nav.Link>
                         <Nav.Link href="https://iizz.tistory.com">
                             <ImageStyle src="../public/assets/profile/blog.svg" alt="blog" />
-                            Tech Blog</Nav.Link>
+                            Blog</Nav.Link>
                     </Nav>
                 </Container>
             </NavStyle>
