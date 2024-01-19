@@ -1,6 +1,6 @@
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 import {Outlet, useNavigate} from "react-router-dom";
 
@@ -27,6 +27,30 @@ const HeaderTabs: React.FC = () => {
             navigate(`/${k}`);
         }
     }
+
+    useEffect(() => {
+        const currentPath = location.pathname;
+
+        switch (currentPath) {
+            case '/intro':
+                setActiveKey('intro');
+                break;
+            case '/skills':
+                setActiveKey('skills');
+                break;
+            case '/careers':
+                setActiveKey('careers');
+                break;
+            case '/licenses':
+                setActiveKey('licenses');
+                break;
+            case '/educations':
+                setActiveKey('educations');
+                break;
+            default:
+                setActiveKey('intro');
+        }
+    }, [location.pathname]);
 
     return (
         <TabsStyle

@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import HeaderTabs from "../styles/navigation/HeaderTabs.tsx";
+import HeaderTabs from "../styles/tabs/HeaderTabs.tsx";
 import Introduce from "../components/Introduce.tsx";
 import SkillList from "../components/Skills.tsx";
 import Careers from "../components/Careers.tsx";
