@@ -53,6 +53,7 @@ const SkillList: React.FC = () => {
                     <strong>RabbitMQ</strong>
                     <p>Event 기반 어플리케이션의 Message Broker로 RabbitMQ를 사용 중 입니다.</p>
                     <p>Quorum Queue의 Routing Key 방식을 이용한 Publish / Subscribe Pattern을 주로 사용합니다.</p>
+                    <p>각 스레드별 Channel Basic Consume 방식, Queue를 직접 Subscribe 하는 방식들을 주로 사용합니다.</p>
                 </ListItem>
 
                 <ListItem variant="secondary">
@@ -75,7 +76,7 @@ const SkillList: React.FC = () => {
                 <ListItem variant="secondary">
                     <strong>MariaDB</strong>
                     <p>기본적인 RDB로 MariaDB를 사용 하였습니다.</p>
-                    <p>QueryDSL을 이용한 DB 조작 및 Native Query 작성이 가능합니다.</p>
+                    <p>QueryDSL을 이용한 DB 조작 및 Native Query 작성 & DB Backup/Restore 작업이 가능합니다.</p>
                 </ListItem>
 
                 <ListItem variant="secondary">
