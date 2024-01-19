@@ -1,9 +1,24 @@
 ## Kun Woo Shin's Resume
 
-- React & TypeScript (yarn vite)
 - Server : AWS EC2 (Ubuntu 22.04 LTS)
 - 이력서 접속 URL : 43.202.203.180:3000
 - EC2 Elastic IP 설정
+
+<br>
+
+> **Frontend**
+
+- React (yarn vite)
+- TypeScript
+- Libraries : react-router-dom, styled-components, react-bootstrap, axios
+
+<br>
+
+> **Backend**
+
+- Spring Boot 3.2.1 (JDK 17)
+- Kotlin
+- Spring Data JPA, MariaDB, Spring Webflux, Lombok
 
 <br>
 
