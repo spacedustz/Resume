@@ -26,6 +26,7 @@ const CardContainer = styled(Container)`
     
     div {
         font-weight: bold;
+        color: white;
     }
     
     p {
@@ -34,7 +35,7 @@ const CardContainer = styled(Container)`
 `;
 
 const MainCard = styled(Card)`
-    background-color: rgba(250, 250, 210, 0.5);
+    background-color: rgba(250, 250, 210, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
