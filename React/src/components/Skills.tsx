@@ -56,6 +56,11 @@ const SkillList: React.FC = () => {
                 </ListItem>
 
                 <ListItem variant="secondary">
+                    <strong>Gstreamer</strong>
+                    <p>Gstreamer Pipeline의 Video Bitrate, Codec, Filter, Format, Sink 설정 등 세부 파라미터 조정을 통한 Streaming Pipeline 설정 경험이 있습니다.</p>
+                </ListItem>
+
+                <ListItem variant="secondary">
                     <strong>RTSP & FFmpeg & HLS</strong>
                     <p>브라우저에서 지원하지 않는 RTSP 프로토콜 실시간 영상을 FFmpeg을 이용해 HLS로 변환하여 스트리밍 하였습니다.</p>
                 </ListItem>
