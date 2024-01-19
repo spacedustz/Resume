@@ -34,6 +34,12 @@ const NavStyle = styled(Navbar)`
     }
 `;
 
+const ImageStyle = styled.img`
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+`;
+
 const Navigation: React.FC = () => {
     return (
         <>
@@ -41,8 +47,12 @@ const Navigation: React.FC = () => {
                 <Container>
                     <Navbar.Brand>신건우 이력서</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="https://github.com/spacedustz">Github</Nav.Link>
-                        <Nav.Link href="https://iizz.tistory.com">Tech Blog</Nav.Link>
+                        <Nav.Link href="https://github.com/spacedustz">
+                            <ImageStyle src="../public/assets/profile/github.svg" alt="github" />
+                            Github</Nav.Link>
+                        <Nav.Link href="https://iizz.tistory.com">
+                            <ImageStyle src="../public/assets/profile/blog.svg" alt="blog" />
+                            Tech Blog</Nav.Link>
                     </Nav>
                 </Container>
             </NavStyle>
