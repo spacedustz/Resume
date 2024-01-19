@@ -52,10 +52,10 @@ const Navigation: React.FC = () => {
                 <Container>
                     <Navbar.Brand>신건우 이력서</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="https://github.com/spacedustz">
+                        <Nav.Link href="https://github.com/spacedustz" target="_blank">
                             <ImageStyle src="../public/assets/profile/github.svg" alt="github" />
                             Github</Nav.Link>
-                        <Nav.Link href="https://iizz.tistory.com">
+                        <Nav.Link href="https://iizz.tistory.com" target="_blank">
                             <ImageStyle src="../public/assets/profile/blog.svg" alt="blog" />
                             Blog</Nav.Link>
                     </Nav>
