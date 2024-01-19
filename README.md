@@ -18,7 +18,11 @@
 
 - Spring Boot 3.2.1 (JDK 17)
 - Kotlin
-- Spring Data JPA, MariaDB, Spring Webflux, Lombok
+- Spring Data JPA
+- WebSocket
+- MariaDB
+- Spring Webflux
+- Lombok
 
 ---
 
