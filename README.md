@@ -4,25 +4,30 @@
 - 이력서 접속 URL : 43.202.203.180:3000
 - EC2 Elastic IP 설정
 
-<br>
+---
 
-> **Frontend**
+## 📘 Frontend
 
 - React (yarn vite)
 - TypeScript
 - Libraries : react-router-dom, styled-components, react-bootstrap, axios
 
-<br>
+---
 
-> **Backend**
+## 📘 Backend
 
 - Spring Boot 3.2.1 (JDK 17)
 - Kotlin
 - Spring Data JPA, MariaDB, Spring Webflux, Lombok
 
-<br>
+---
 
-## 서버 세팅 스크립트
+## 📘 서버 세팅 스크립트
+
+- Docker
+- OpenJDK 17
+- Mariadb (Container)
+- NodeJS
 
 ```bash
 #!/bin/bash
@@ -64,7 +69,7 @@ setenforce 0
 
 <br>
 
-> DB & DB User 생성 - DB 컨테이너 내부에서 진행
+> 🚩 **DB & DB User 생성 - DB 컨테이너 내부에서 진행**
 
 ```sql
 create database skw character set utf8mb4 collate utf8mb4_general_ci;
