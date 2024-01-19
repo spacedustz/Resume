@@ -1,7 +1,22 @@
 import Card from 'react-bootstrap/Card';
 import React from "react";
 import {Container} from "react-bootstrap";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+
+const colorChange = keyframes`
+    0% {
+        background-color: rgba(250, 250, 210, 0);
+        color: rgba(250, 250, 210, 0.5);
+    }
+    50% {
+        background-color: rgba(250, 250, 210, 0);
+        color: rgba(250, 250, 210, 0.8);
+    }
+    100% {
+        background-color: rgba(250, 250, 210, 0);
+        color: rgba(250, 250, 210, 0.5);
+    }
+`;
 
 const CardContainer = styled(Container)`
     display: flex;
@@ -27,6 +42,7 @@ const CardContainer = styled(Container)`
     div {
         font-weight: bold;
         color: white;
+        animation: ${colorChange} 3s infinite;
     }
     
     p {
@@ -35,7 +51,7 @@ const CardContainer = styled(Container)`
 `;
 
 const MainCard = styled(Card)`
-    background-color: rgba(250, 250, 210, 0);
+    background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
