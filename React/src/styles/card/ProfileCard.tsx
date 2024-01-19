@@ -64,7 +64,6 @@ const ProfileCard: React.FC = () => {
             <MainCard style={{width: '20rem'}}>
                 <Card.Img variant="top" src="../../public/assets/me2.png"/>
                 <Card.Body>
-                    <Card.Title>신건우</Card.Title>
                     <Card.Text>
                         <strong>안녕하세요, 신입 개발자 신건우입니다.</strong><br/>
                     </Card.Text>
