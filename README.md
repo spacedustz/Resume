@@ -1,7 +1,8 @@
 ## Kun Woo Shin's Resume
 
+[😺 이력서 구경하기 😺](http://43.202.203.180:3000/intro)
+
 - Server : AWS EC2 (Ubuntu 22.04 LTS)
-- 이력서 접속 URL : 43.202.203.180:3000
 - EC2 Elastic IP 설정
 
 ---
