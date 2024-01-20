@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import ListGroup from "react-bootstrap/ListGroup";
 import {ListContainer} from "../styles/container/ListContainer.tsx";
 import {ListItem} from "../styles/tabs/ListItem.tsx";
 import BaseBar from "../styles/bar/BaseBar.tsx";
@@ -181,7 +180,7 @@ const Careers: React.FC = () => {
             <h2>고은정보기술(주)</h2>
             <SubTitle>2021.10 - 2022.07</SubTitle>
             <SubTitle>기술지원팀 / 주임 (시스템 엔지니어)</SubTitle>
-            <ListGroup>
+            <ListStyle>
                 <ListItem variant="secondary">
                     <StyledTable>
                         <thead>
@@ -206,7 +205,7 @@ const Careers: React.FC = () => {
                         </tbody>
                     </StyledTable>
                 </ListItem>
-            </ListGroup>
+            </ListStyle>
         </ListContainer>
     );
 };
