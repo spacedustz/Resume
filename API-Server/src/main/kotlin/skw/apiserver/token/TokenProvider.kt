@@ -33,7 +33,7 @@ class TokenProvider(
         .setIssuer(issuer) // 발급자
         .setIssuedAt(Timestamp.valueOf(LocalDateTime.now())) // 토큰 발급 시간
         .setExpiration(Date.from(Instant.now().plus(expirationHours, ChronoUnit.HOURS))) // 토큰 만료시간 설정 -> 3시간
-        .compact()!! // 토큰 생성
+        .compact() ?: throw RuntimeException("Token 생성 실패") // 토큰 생성
 
     /**
      * Validate Token
