@@ -13,40 +13,18 @@ const FirstH2 = styled.h2`
 const SkillList: React.FC = () => {
     return (
         <ListContainer>
-            <FirstH2>Languages</FirstH2>
-            <ListGroup>
-                    <ListItem variant="secondary">
-                        <strong>Java</strong>
-                        <p>부트캠프에서 첫 프로그래밍 언어로 학습하였습니다. 객체 지향적인 코드 작성을 위해 지속적인 학습중입니다.</p>
-                    </ListItem>
-
-                    <ListItem variant="secondary">
-                        <strong>Kotlin</strong>
-                        <p>Cross Platform App의 백엔드 개발을 위해 사용했던 언어입니다.</p>
-                    </ListItem>
-
-                    <ListItem variant="secondary">
-                        <strong>JavaScript</strong>
-                        <p>간단한 웹페이지의 동적인 기능을 위해 사용중입니다.</p>
-                    </ListItem>
-
-                    <ListItem variant="secondary">
-                        <strong>TypeScript</strong>
-                        <p>React를 이용한 SPA 기반의 웹 프론트엔드 개발을 위해 사용중입니다.</p>
-                    </ListItem>
-            </ListGroup>
-
-            <h2>Stacks</h2>
+            <FirstH2>Frameworks</FirstH2>
             <ListGroup>
                 <ListItem variant="secondary">
                     <strong>Spring Boot</strong>
-                    <p>JPA & Hibernate를 이용한 백엔드 개발을 위해 사용 중 입니다.</p>
+                    <p>Java & Kotlin 기반의 JPA & Hibernate를 이용한 백엔드 개발을 위해 사용 중 입니다.</p>
                     <p>Spring Data JPA, Spring Data Redis, WebSocket, Spring AMQP, Spring WebClient, QueryDSL 등</p>
                 </ListItem>
 
                 <ListItem variant="secondary">
                     <strong>React</strong>
-                    <p>CSR / SPA 방식의 프론트엔드 개발을 위해 TypeScript 언어와 함께 사용 중 입니다.</p>
+                    <p>CSR & SPA 방식의 프론트엔드 개발을 위해 TypeScript 언어와 함께 사용 중 입니다.</p>
+                    <p>Kakao Map API, Backend와 WebSocket 통신을 통한 실시간 데이터 변화를 표현하고 싶어 사용 하였습니다.</p>
                 </ListItem>
 
                 <ListItem variant="secondary">
@@ -58,21 +36,26 @@ const SkillList: React.FC = () => {
 
                 <ListItem variant="secondary">
                     <strong>Gstreamer</strong>
-                    <p>Gstreamer Pipeline의 Video Bitrate, Codec, Filter, Format, Sink 설정 등 세부 파라미터 조정을 통한 Streaming Pipeline 설정 경험이 있습니다.</p>
+                    <p>Gstreamer Pipeline의 Video Bitrate, Codec, Filter, Format, Sink 설정 등 세부 파라미터 조정을 통한 Streaming
+                        Pipeline 설정 경험이 있습니다.</p>
                 </ListItem>
 
                 <ListItem variant="secondary">
                     <strong>RTSP & FFmpeg & HLS</strong>
-                    <p>브라우저에서 지원하지 않는 RTSP 프로토콜 실시간 영상을 FFmpeg을 이용해 HLS로 변환하여 스트리밍 하였습니다.</p>
-                    <p>Segment / m3u8 File에 대한 HLS List Size등 많은 옵션을 사용하여 Video 변환 Latency 튜닝을 하였습비다.</p>
+                    <p>브라우저에서 지원하지 않는 RTSP 프로토콜 실시간 영상을 FFmpeg을 이용해 HLS로 변환하여 브라우저로 스트리밍 하였습니다.</p>
+                    <p>.ts(Segment) & .m3u8(Playlist) File에 대한 HLS List Size 등등 많은 옵션을 사용하여</p>
+                    <p>Video 변환 Latency & Segment 파일 크기 등 환경에 맞는 Video를 변환 및 튜닝 하였습니다.</p>
                 </ListItem>
 
                 <ListItem variant="secondary">
                     <strong>WebSocket</strong>
-                    <p>대규모 데이터 트래픽을 발생시키는 AI 엔진의 Event Data를 Polling 방식이 아닌 WebSocket을 통해 Subscribe 하는 방식으로 사용합니다.</p>
+                    <p>Message Queue로부터 Consume 한 데이터를 가공해 각각의 플랫폼에 웹소켓 채널을 분리하여 전달할 용도로 사용 하였습니다.</p>
                     <p>그 외 프론트엔드 단의 실시간 데이터 변화를 보여주기 위해 웹소켓을 사용 중 입니다.</p>
                 </ListItem>
+            </ListGroup>
 
+            <ListGroup>
+                <h2>Databases</h2>
                 <ListItem variant="secondary">
                     <strong>MariaDB</strong>
                     <p>기본적인 RDB로 MariaDB를 사용 하였습니다.</p>
@@ -84,7 +67,10 @@ const SkillList: React.FC = () => {
                     <p>휘발성 데이터의 임시 저장과 차트 통계를 위한 빠른 I/O를 위해 사용중인 NoSQL DB입니다.</p>
                     <p>RabbitMQ의 대용으로 Redis Channel의 Publish & Subscribe 패턴을 이용한 데이터 핸들링 경험이 있습니다.</p>
                 </ListItem>
+            </ListGroup>
 
+            <ListGroup>
+                <h2>DevOps</h2>
                 <ListItem variant="secondary">
                     <strong>Server & Serverless</strong>
                     <p>Debian & RedHat 기반의 Linux / Windows Server 세팅 경험이 있습니다.</p>
@@ -100,12 +86,13 @@ const SkillList: React.FC = () => {
 
                 <ListItem variant="secondary">
                     <strong>CI & CD</strong>
-                    <p>Jenkins Declarative Pipeline & Nginx & Docker를 이용한 트래픽 로드밸런싱과 Blue & Green 무중단 배포를 구현해 본 경험이
-                        있습니다.</p>
+                    <p>실무 프로젝트를 Jenkins Declarative Pipeline & Nginx & Docker Container를 이용한 트래픽 로드밸런싱 / Blue & Green
+                        무중단 배포를 하였습니다.</p>
                     <p>Github Actions를 통한 간단한 CI & CD를 구현해 본 경험이 있습니다.</p>
                     <p>AWS Code Deploy, Pipeline을 이용한 CI & CD를 구현해 본 경험이 있습니다.</p>
                 </ListItem>
             </ListGroup>
+
 
         </ListContainer>
     );
