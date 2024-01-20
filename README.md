@@ -9,7 +9,7 @@
 
 ## 📘 Frontend
 
-- React (yarn vite)
+- React (nodejs: 20.11.0 / yarn: 1.22.21 / vite )
 - TypeScript
 - Libraries : react-router-dom, styled-components, react-bootstrap, axios
 
