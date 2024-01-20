@@ -14,15 +14,17 @@ data class Comment(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
-    var comment: String? = null,
+//    var name: String,
+//    var password: String,
+    var description: String? = null,
     var createdAt: String? = null
 ) {
-    constructor(comment: String, createdAt: String) : this(null, comment, createdAt)
+    constructor(description: String, createdAt: String) : this(null, description, createdAt)
 
     companion object {
-        fun createOf(comment: String): Comment {
+        fun createOf(description: String): Comment {
             val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH시 mm분 ss초")
-            return Comment(comment, LocalDateTime.now().format(formatter).toString())
+            return Comment(description, LocalDateTime.now().format(formatter).toString())
         }
     }
 }
