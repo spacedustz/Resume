@@ -20,9 +20,11 @@
 - Spring Boot 3.2.1 (JDK 17)
 - Kotlin
 - Spring Data JPA
+- Spring Webflux
+- Spring Security 6.x.x
+- JJWT
 - WebSocket
 - MariaDB
-- Spring Webflux
 - Lombok
 
 ---
