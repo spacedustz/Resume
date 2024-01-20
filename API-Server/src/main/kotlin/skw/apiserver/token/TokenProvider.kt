@@ -26,6 +26,7 @@ class TokenProvider(
     @Value("\${issuer}")
     private val issuer: String
 ) {
+    /* userSpecification은 "userName:userType"의 형식을 받음 */
     fun createToken(userSpecification: String) = Jwts.builder()
         .signWith(SecretKeySpec(secretKey.toByteArray(), SignatureAlgorithm.HS512.jcaName)) // HS512 알고리즘 / secretKey를 이용해 서명
         .setSubject(userSpecification) // 토큰의 Subject 설정
