@@ -96,18 +96,6 @@ const Careers: React.FC = () => {
 
                         <tbody>
                         <tr>
-                            <td><BaseBar num={100}/></td>
-                            <SubTd>
-                                <ul>회사 소스코드 관리 시스템 구축</ul>
-                                <li>Git Organization 생성하여 프로젝트 별 Repository 생성 및 소스코드 관리</li>
-                            </SubTd>
-                            <SubTd>
-                                <li>Git</li>
-                                <li>Github Organization</li>
-                            </SubTd>
-                        </tr>
-
-                        <tr>
                             <td><BaseBar num={20}/></td>
                             <SubTd>
                                 <ul>다인스 자체 서비스 데이터 뷰어 플랫폼</ul>
