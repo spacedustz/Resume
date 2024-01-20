@@ -6,12 +6,11 @@ import skw.apiserver.dto.SignUpRequest
 import skw.apiserver.dto.UpdateRequest
 import skw.apiserver.enum.UserType
 import java.time.LocalDateTime
-import java.util.UUID
 
 @Entity
 class User(
-    @Id @GeneratedValue(strategy = GenerationType.UUID)
-    val id: UUID? = null,
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long? = null,
 
     @Column(nullable = false, scale = 20, unique = true)
     val name: String,
