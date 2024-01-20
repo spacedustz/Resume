@@ -86,8 +86,8 @@ const SkillList: React.FC = () => {
 
                 <ListItem variant="secondary">
                     <strong>CI & CD</strong>
-                    <p>실무 프로젝트를 Jenkins Declarative Pipeline & Nginx & Docker Container를 이용한 트래픽 로드밸런싱 / Blue & Green
-                        무중단 배포를 하였습니다.</p>
+                    <p>실무 백엔드 프로젝트를 Blue & Green 무중단 방식으로 배포 하였습니다.</p>
+                    <p>↑ Jenkins Declarative Pipeline & Nginx & Docker Container를 이용한 트래픽 로드밸런싱 및 HA 구성 ↑</p>
                     <p>Github Actions를 통한 간단한 CI & CD를 구현해 본 경험이 있습니다.</p>
                     <p>AWS Code Deploy, Pipeline을 이용한 CI & CD를 구현해 본 경험이 있습니다.</p>
                 </ListItem>
