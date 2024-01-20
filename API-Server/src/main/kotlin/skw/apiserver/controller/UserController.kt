@@ -1,7 +1,9 @@
 package skw.apiserver.controller
 
 import lombok.RequiredArgsConstructor
-import org.springframework.web.bind.annotation.GetMapping
+import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
+import org.springframework.security.access.prepost.PreAuthorize
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
@@ -11,23 +13,26 @@ import skw.apiserver.dto.SignInRequest
 import skw.apiserver.dto.SignUpRequest
 import skw.apiserver.service.UserService
 
+@PreAuthorize("hasAuthority('USER')")
 @RestController
 @RequestMapping
 @RequiredArgsConstructor
 class UserController(
     private val userService: UserService
 ) {
-    /* User 기능 */
+    companion object {
+        private val log: Logger = LogManager.getLogger(this::class.java.name)
+    }
+
     @PostMapping("/sign-up")
-    fun signUp(@RequestBody request: SignUpRequest) = ApiResponse.success(userService.signUpUser(request))
+    fun signUp(@RequestBody request: SignUpRequest) {
+        ApiResponse.success(userService.signUpUser(request))
+        log.info("${request.name} 유저가 회원가입을 하였습니다!")
+    }
 
     @PostMapping("/sign-in")
-    fun signIn(@RequestBody request: SignInRequest) = ApiResponse.success(userService.signIn(request))
-
-    /* Admin 기능 */
-    @GetMapping("/admin/users")
-    fun getAllUser() = ApiResponse.success(userService.getUsers())
-
-    @GetMapping("/admin/admins")
-    fun getAllAdmins() = ApiResponse.success(userService.getAdmins())
+    fun signIn(@RequestBody request: SignInRequest) {
+        ApiResponse.success(userService.signIn(request))
+        log.info("${request.name} 유저가 로그인 하였습니다!")
+    }
 }
