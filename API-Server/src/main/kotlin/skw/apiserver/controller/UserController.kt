@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 import org.springframework.security.access.prepost.PreAuthorize
+import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
@@ -14,6 +15,7 @@ import skw.apiserver.dto.SignUpRequest
 import skw.apiserver.service.UserService
 
 @PreAuthorize("hasAuthority('USER')")
+@CrossOrigin("http://43.202.203.180:3000")
 @RestController
 @RequestMapping
 @RequiredArgsConstructor
