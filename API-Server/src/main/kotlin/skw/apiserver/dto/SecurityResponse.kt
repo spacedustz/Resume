@@ -6,7 +6,7 @@ import java.time.LocalDateTime
 import java.util.UUID
 
 data class SignUpResponse(
-    val id: UUID,
+    val id: Long,
     val name: String,
 ) {
     companion object {
@@ -19,7 +19,8 @@ data class SignUpResponse(
 
 data class SignInResponse(
     val name: String,
-    val type: UserType
+    val type: UserType,
+    val token: String // 로그인하면 토큰을 받을 수 있게 Response에 추가
 )
 
 data class UpdatePasswordResponse(
@@ -37,13 +38,13 @@ data class UpdatePasswordResponse(
 }
 
 data class UserInfoResponse(
-    val id: UUID,
+    val id: Long,
     val name: String,
     val type: UserType,
     val createdAt: LocalDateTime
 ) {
     companion object {
-        fun createOf(user: User) = UserInfoResponse(
+        fun from(user: User) = UserInfoResponse(
             id = user.id!!,
             name = user.name,
             type = user.type,
