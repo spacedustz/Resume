@@ -27,14 +27,18 @@ class UserController(
     }
 
     @PostMapping("/sign-up")
-    fun signUp(@RequestBody request: SignUpRequest) {
-        ApiResponse.success(userService.signUpUser(request))
+    fun signUp(@RequestBody request: SignUpRequest): ApiResponse {
+        val response = ApiResponse.success(userService.signUpUser(request))
         log.info("${request.name} 유저가 회원가입을 하였습니다!")
+
+        return response
     }
 
     @PostMapping("/sign-in")
-    fun signIn(@RequestBody request: SignInRequest) {
-        ApiResponse.success(userService.signIn(request))
+    fun signIn(@RequestBody request: SignInRequest): ApiResponse {
+        val response = ApiResponse.success(userService.signIn(request))
         log.info("${request.name} 유저가 로그인 하였습니다!")
+
+        return response
     }
 }
