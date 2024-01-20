@@ -34,4 +34,15 @@ class TokenProvider(
         .setIssuedAt(Timestamp.valueOf(LocalDateTime.now())) // 토큰 발급 시간
         .setExpiration(Date.from(Instant.now().plus(expirationHours, ChronoUnit.HOURS))) // 토큰 만료시간 설정 -> 3시간
         .compact()!! // 토큰 생성
+
+    /**
+     * Validate Token
+     * createToken() 에서 받은 Subject 복호화해서 리턴
+     */
+    fun validateTokenAndGetSubject(token: String): String? = Jwts.parserBuilder()
+        .setSigningKey(secretKey.toByteArray())
+        .build()
+        .parseClaimsJws(token)
+        .body
+        .subject
 }
