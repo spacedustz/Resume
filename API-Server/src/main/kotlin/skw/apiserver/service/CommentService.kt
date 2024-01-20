@@ -14,8 +14,8 @@ class CommentService(
     private val commentRepository: CommentRepository
 ) {
 
-    @PostConstruct
-    fun init() {
-        commentRepository.save(Comment.createOf("첫 댓글"))
-    }
+//    @PostConstruct
+//    fun init() {
+//        commentRepository.save(Comment.createOf("첫 댓글"))
+//    }
 }
