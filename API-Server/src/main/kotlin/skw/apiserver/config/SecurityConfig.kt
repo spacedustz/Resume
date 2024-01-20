@@ -1,8 +1,8 @@
 package skw.apiserver.config
 
+import lombok.RequiredArgsConstructor
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
-import org.springframework.http.HttpMethod
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configurers.CsrfConfigurer
@@ -18,23 +18,24 @@ import skw.apiserver.filter.JwtAuthenticationFilter
  */
 @Configuration
 @EnableMethodSecurity
+@RequiredArgsConstructor
 class SecurityConfig(
     private val jwtAuthenticationFilter: JwtAuthenticationFilter
 ) {
-    private val defaultPages = arrayOf(
-        "/",
-        "/intro",
-        "/skills",
-        "/careers",
-        "/licenses",
-        "/educations"
-    )
-
-    private val signupPages = arrayOf(
-        "/sign-up",
-        "/sign-in",
-        "/login"
-    )
+//    private val defaultPages = arrayOf(
+//        "/",
+//        "/intro",
+//        "/skills",
+//        "/careers",
+//        "/licenses",
+//        "/educations"
+//    )
+//
+//    private val signupPages = arrayOf(
+//        "/",
+//        "/sign-up",
+//        "/sign-in",
+//    )
 
     @Bean
     fun filterChain(http: HttpSecurity) = http
@@ -42,11 +43,11 @@ class SecurityConfig(
         .headers { header -> header.frameOptions(HeadersConfigurer<HttpSecurity>.FrameOptionsConfig::sameOrigin) }
         .authorizeHttpRequests { authorize ->
             authorize
-                .anyRequest().permitAll()
+//                .anyRequest().permitAll()
 //                .requestMatchers(*defaultPages).permitAll()
 //                .requestMatchers(*signupPages).permitAll()
 //                .requestMatchers(HttpMethod.POST, "/feedback").authenticated()
-//                .anyRequest().authenticated()
+                .anyRequest().authenticated()
         }
         .sessionManagement { session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS) }
         .addFilterBefore(jwtAuthenticationFilter, BasicAuthenticationFilter::class.java)
