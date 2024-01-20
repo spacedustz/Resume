@@ -55,7 +55,7 @@ class UserService(
         return SignInResponse(user.name, user.type, token)
     }
 
-    fun updateMember(id: Long, request: UpdateRequest): UpdatePasswordResponse {
+    fun updatePassword(id: Long, request: UpdateRequest): UpdatePasswordResponse {
         val user = userRepository.findByIdOrNull(id)
             ?.takeIf { encoder.matches(request.password, it.password) }
             ?: throw IllegalArgumentException("아이디 또는 비밀번호가 일치하지 않습니다.")
