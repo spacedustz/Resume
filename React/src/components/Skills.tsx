@@ -24,7 +24,6 @@ const SkillList: React.FC = () => {
                 <ListItem variant="secondary">
                     <strong>React</strong>
                     <p>CSR & SPA 방식의 프론트엔드 개발을 위해 TypeScript 언어와 함께 사용 중 입니다.</p>
-                    <p>Kakao Map API, Backend와 WebSocket 통신을 통한 실시간 데이터 변화를 표현하고 싶어 사용 하였습니다.</p>
                 </ListItem>
 
                 <ListItem variant="secondary">
