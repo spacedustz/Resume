@@ -66,7 +66,7 @@ const ProfileCard: React.FC = () => {
                 <Card.Body>
                     <Card.Text>
                         <strong>😊 안녕하세요 😊</strong><br/>
-                        <strong>신입 개발자 신건우입니다.</strong>
+                        <strong>신입 개발자 신건우입니다.</strong><br/>
                         <strong>010-7520-3060</strong>
                     </Card.Text>
                 </Card.Body>
