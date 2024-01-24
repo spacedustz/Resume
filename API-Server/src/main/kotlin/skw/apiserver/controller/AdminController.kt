@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 import org.springframework.security.access.prepost.PreAuthorize
-import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
@@ -12,7 +11,6 @@ import skw.apiserver.dto.ApiResponse
 import skw.apiserver.service.UserService
 
 @PreAuthorize("hasAuthority('DEVELOPER')")
-@CrossOrigin("http://43.202.203.180:3000")
 @RestController
 @RequestMapping("/admin")
 @RequiredArgsConstructor
