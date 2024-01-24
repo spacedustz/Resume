@@ -19,7 +19,7 @@ import skw.apiserver.token.TokenProvider
 /**
  * @Order : 의존성 주입 우선순위 최상위로 설정
  */
-//@Order(0)
+@Order(0)
 @Component
 class JwtAuthenticationFilter(
     private val tokenProvider: TokenProvider
@@ -33,6 +33,13 @@ class JwtAuthenticationFilter(
         response: HttpServletResponse,
         filterChain: FilterChain
     ) {
+        val requestURI = request.requestURI
+
+        if (requestURI.endsWith("/sign-in") || requestURI.endsWith("/sign-up")) {
+            filterChain.doFilter(request, response)
+            return
+        }
+
         val token = parseBearerToken(request)
 
         if (token != null && tokenProvider.validateTokenAndGetSubject(token) != null) {
@@ -46,7 +53,7 @@ class JwtAuthenticationFilter(
             SecurityContextHolder.getContext().authentication = authenticationToken
         } else {
             response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized")
-            log.error("토큰이 없거나 유효하지 않은 토큰입니다. - Token : $token")
+            log.error("토큰이 없거나 유효하지 않은 토큰입니다. - Authorization Header : ${request.getHeader(HttpHeaders.AUTHORIZATION)}")
             return
         }
 
