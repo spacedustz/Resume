@@ -31,11 +31,11 @@ class SecurityConfig(
 //        "/educations"
 //    )
 //
-//    private val signupPages = arrayOf(
-//        "/",
-//        "/sign-up",
-//        "/sign-in",
-//    )
+    private val signupPages = arrayOf(
+        "/",
+        "/sign-up",
+        "/sign-in",
+    )
 
     @Bean
     fun filterChain(http: HttpSecurity) = http
@@ -43,10 +43,7 @@ class SecurityConfig(
         .headers { header -> header.frameOptions(HeadersConfigurer<HttpSecurity>.FrameOptionsConfig::sameOrigin) }
         .authorizeHttpRequests { authorize ->
             authorize
-//                .anyRequest().permitAll()
-//                .requestMatchers(*defaultPages).permitAll()
-//                .requestMatchers(*signupPages).permitAll()
-//                .requestMatchers(HttpMethod.POST, "/feedback").authenticated()
+                .requestMatchers(*signupPages).permitAll()
                 .anyRequest().authenticated()
         }
         .sessionManagement { session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS) }
