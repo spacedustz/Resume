@@ -39,7 +39,7 @@ const CardContainer = styled(Container)`
         }
     }
     
-    div {
+    div, h5, h6 {
         font-weight: bold;
         color: white;
         animation: ${colorChange} 3s infinite;
@@ -65,8 +65,9 @@ const ProfileCard: React.FC = () => {
                 <Card.Img variant="top" src="../../public/assets/me2.png"/>
                 <Card.Body>
                     <Card.Text>
-                        <strong>😊 안녕하세요 😊</strong><br/>
-                        <strong>신입 개발자 신건우입니다.</strong><br/>
+                        <h5>😊 안녕하세요 😊</h5><br/>
+                        <h6>개발자 신건우입니다.</h6><br/>
+                        <strong>spacedustw@gmail.com</strong>
                     </Card.Text>
                 </Card.Body>
             </MainCard>
