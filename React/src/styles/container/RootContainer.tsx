@@ -6,6 +6,7 @@ export const RootContainer = styled.div`
     font-weight: bold;
     background-image: url("../../../public/assets/background/earth.jpg");
     background-size: cover;
+    background-position: center center;
     min-height: 100vh;
     width: 100vw;
     //height: 100vh;
