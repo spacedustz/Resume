@@ -20,10 +20,18 @@ export const IntroContainer = styled(Container)`
         background-color: rgba(250, 250, 210, 0.5);
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
     
     h3 {
         color: khaki;
         margin-bottom: 30px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 `;
