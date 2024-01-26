@@ -4,13 +4,14 @@ import {Container} from "react-bootstrap";
 export const IntroContainer = styled(Container)`
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 20px;
     font-family: 'Arial', sans-serif;
     color: #333;
 
     div {
-        width: 100%;
+        width: 80%;
         margin-top: 10px;
         margin-bottom: 10px;
         padding: 20px;
