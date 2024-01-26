@@ -14,7 +14,7 @@ const colorChange = keyframes`
     }
     100% {
         background-color: rgba(250, 250, 210, 0);
-        color: rgba(250, 250, 210, 0.9);
+        color: rgba(250, 250, 210, 0.5);
     }
 `;
 
