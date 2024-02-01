@@ -14,7 +14,7 @@ const colorChange = keyframes`
     }
     100% {
         background-color: rgba(250, 250, 210, 0);
-        color: rgba(250, 250, 210, 0.9);
+        color: rgba(250, 250, 210, 0.5);
     }
 `;
 
@@ -44,10 +44,6 @@ const CardContainer = styled(Container)`
         color: white;
         animation: ${colorChange} 3s infinite;
     }
-    
-    p {
-        font-size: 15px;
-    }
 `;
 
 const MainCard = styled(Card)`
@@ -57,6 +53,10 @@ const MainCard = styled(Card)`
     align-items: center;
 `;
 
+const Title = styled.h5`
+    font-size: 20px;
+`;
+
 
 const ProfileCard: React.FC = () => {
     return (
@@ -64,11 +64,9 @@ const ProfileCard: React.FC = () => {
             <MainCard style={{width: '20rem'}}>
                 {/*<Card.Img variant="top" src="../../public/assets/me2.png"/>*/}
                 <Card.Body>
-                    <Card.Text>
-                        <h5>😊 안녕하세요 😊</h5><br/>
-                        <h6>개발자 신건우입니다.</h6><br/>
+                        <Title>😊 안녕하세요 😊</Title><br/>
+                        <strong>개발자 신건우입니다.</strong><br/>
                         <strong>spacedustw@gmail.com</strong>
-                    </Card.Text>
                 </Card.Body>
             </MainCard>
         </CardContainer>
