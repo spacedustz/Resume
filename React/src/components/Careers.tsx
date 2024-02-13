@@ -167,7 +167,7 @@ const Careers: React.FC = () => {
                 </ListItem>
             </ListStyle>
 
-            <h2>고은정보기술(주)</h2>
+            <h2 style={{color: "black"}}>고은정보기술(주)</h2>
             <SubTitle>2021.10 - 2022.07</SubTitle>
             <SubTitle>기술지원팀 / 주임 (시스템 엔지니어)</SubTitle>
             <ListStyle>
