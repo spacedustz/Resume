@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import {ImageStyle, NavStyle} from "../styles/navigation/Navigation.ts";
 import {useNavigate} from "react-router-dom";
@@ -14,7 +13,6 @@ const Navigation: React.FC = () => {
     return (
         <>
             <NavStyle bg="dark" data-bs-theme="dark">
-                <Container>
                     <Nav className="me-auto">
                         <Nav.Link onClick={handleClick}>
                             <ImageStyle src="../public/assets/profile/home.png" alt="home" />
@@ -29,7 +27,6 @@ const Navigation: React.FC = () => {
                             <ImageStyle src="../public/assets/profile/blog.svg" alt="blog" />
                             Blog</Nav.Link>
                     </Nav>
-                </Container>
             </NavStyle>
         </>
     );
