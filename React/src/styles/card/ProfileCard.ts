@@ -1,21 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import {Container} from "react-bootstrap";
-import styled, {keyframes} from "styled-components";
-
-export const colorChange = keyframes`
-    0% {
-        background-color: rgba(250, 250, 210, 0);
-        color: rgba(250, 250, 210, 0.5);
-    }
-    50% {
-        background-color: rgba(250, 250, 210, 0);
-        color: rgba(250, 250, 210, 0.8);
-    }
-    100% {
-        background-color: rgba(250, 250, 210, 0);
-        color: rgba(250, 250, 210, 0.5);
-    }
-`;
+import styled from "styled-components";
+import {NavColorChange} from "../animation/TextColor.ts";
 
 export const CardContainer = styled(Container)`
     display: flex;
@@ -40,8 +26,8 @@ export const CardContainer = styled(Container)`
     
     div, h5, h6 {
         font-weight: bold;
-        color: white;
-        animation: ${colorChange} 3s infinite;
+        color: black;
+        //animation: ${NavColorChange} 3s infinite;
     }
 `;
 
