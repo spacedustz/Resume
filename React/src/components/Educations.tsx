@@ -48,6 +48,7 @@ const FirstTitle = styled.h2`
     padding-left: 70%;
     padding-right: 70%;
     margin-bottom: 10px;
+    color: black !important;
 `;
 
 const ListStyle = styled(ListGroupItem)`

@@ -9,6 +9,7 @@ const FirstTitle = styled.h2`
     padding-left: 70%;
     padding-right: 70%;
     margin-bottom: 10px;
+    color: black !important;
 `;
 
 const ListStyle = styled(ListGroupItem)`
@@ -75,6 +76,7 @@ const SubTd = styled.td`
 
 const SubTitle = styled.div`
     color: #FCFFEE;
+    color: black !important;
 `;
 
 const Careers: React.FC = () => {
