@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import {ListContainer} from "../styles/container/ListContainer.tsx";
-import {ListItem} from "../styles/tabs/ListItem.tsx";
-import BaseBar from "../styles/bar/BaseBar.tsx";
+import {ListContainer} from "../styles/container/ListContainer.ts";
+import {ListItem} from "../styles/tabs/ListItem.ts";
+import BaseBar from "./BaseBar.tsx";
 import {ListGroupItem, Table} from "react-bootstrap";
 
 const FirstTitle = styled.h2`

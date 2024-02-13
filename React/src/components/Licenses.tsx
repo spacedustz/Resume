@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import {ListGroupItem, Table} from "react-bootstrap";
-import {ListContainer} from "../styles/container/ListContainer.tsx";
-import {ListItem} from "../styles/tabs/ListItem.tsx";
+import {ListContainer} from "../styles/container/ListContainer.ts";
+import {ListItem} from "../styles/tabs/ListItem.ts";
 
 const StyledTable = styled(Table)`
     table {

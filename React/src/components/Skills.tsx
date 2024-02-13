@@ -1,8 +1,8 @@
 import React from "react";
 import ListGroup from 'react-bootstrap/ListGroup';
 import styled from "styled-components";
-import {ListContainer} from "../styles/container/ListContainer.tsx";
-import {ListItem} from "../styles/tabs/ListItem.tsx";
+import {ListContainer} from "../styles/container/ListContainer.ts";
+import {ListItem} from "../styles/tabs/ListItem.ts";
 
 const FirstH2 = styled.h2`
     padding-left: 70%;
