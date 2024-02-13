@@ -1,9 +1,8 @@
 import Card from 'react-bootstrap/Card';
-import React from "react";
 import {Container} from "react-bootstrap";
 import styled, {keyframes} from "styled-components";
 
-const colorChange = keyframes`
+export const colorChange = keyframes`
     0% {
         background-color: rgba(250, 250, 210, 0);
         color: rgba(250, 250, 210, 0.5);
@@ -18,7 +17,7 @@ const colorChange = keyframes`
     }
 `;
 
-const CardContainer = styled(Container)`
+export const CardContainer = styled(Container)`
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -46,31 +45,13 @@ const CardContainer = styled(Container)`
     }
 `;
 
-const MainCard = styled(Card)`
+export const MainCard = styled(Card)`
     background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
 `;
 
-const Title = styled.h5`
+export const Title = styled.h5`
     font-size: 20px;
 `;
-
-
-const ProfileCard: React.FC = () => {
-    return (
-        <CardContainer>
-            <MainCard style={{width: '20rem'}}>
-                <Card.Img variant="top" src="../../public/assets/me2.png"/>
-                <Card.Body>
-                        <Title>😊 안녕하세요 😊</Title><br/>
-                        <strong>개발자 신건우입니다.</strong><br/>
-                        <strong>spacedustw@gmail.com</strong>
-                </Card.Body>
-            </MainCard>
-        </CardContainer>
-    );
-}
-
-export default ProfileCard;
