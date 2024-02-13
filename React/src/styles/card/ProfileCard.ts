@@ -10,7 +10,13 @@ export const CardContainer = styled(Container)`
     margin-top: 20px;
 
     img {
-        width: 200px;
+        width: 50%;
+        height: 100%;
+
+        @media (max-width: 768px) {
+            width: 37%;
+            height: 90%;
+        }
     }
 
     a {
@@ -36,8 +42,4 @@ export const MainCard = styled(Card)`
     display: flex;
     flex-direction: column;
     align-items: center;
-`;
-
-export const Title = styled.h5`
-    font-size: 20px;
 `;
