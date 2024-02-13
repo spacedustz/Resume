@@ -1,16 +1,20 @@
 import React, {Suspense} from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import HeaderTabs from "../styles/tabs/HeaderTabs.tsx";
 import Introduce from "../components/Introduce.tsx";
 import SkillList from "../components/Skills.tsx";
 import Careers from "../components/Careers.tsx";
 import Licenses from "../components/Licenses.tsx";
 import Educations from "../components/Educations.tsx";
+import HeaderTabs from "../components/HeaderTabs.tsx";
+import Navigation from "../components/Navigation.tsx";
+import ProfileCard from "../components/ProfileCard.tsx";
 
 const Router: React.FC = () => {
     return (
         <>
             <BrowserRouter>
+                <Navigation />
+                <ProfileCard />
                 <Suspense fallback={<div>Loading...</div>}>
                     <Routes>
                         <Route path="/*" element={<HeaderTabs/>}>
