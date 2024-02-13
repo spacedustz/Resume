@@ -52,7 +52,7 @@ const HeaderTabs: React.FC = () => {
                 <Outlet/>
             </Tab>
 
-            <Tab eventKey="techstack" title={<span style={activeKey === "techstack" ? {color: "lightblue"} : {}}>Tech Stacks</span>}>
+            <Tab eventKey="techstack" title={<span style={activeKey === "techstack" ? {color: "lightblue"} : {}}>Tech</span>}>
                 <Outlet/>
             </Tab>
 
