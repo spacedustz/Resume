@@ -100,12 +100,13 @@ const Careers: React.FC = () => {
                         <tr>
                             <td><BaseBar num={20}/></td>
                             <SubTd>
-                                <ul>다인스 자체 서비스 데이터 뷰어 플랫폼</ul>
+                                <ul>다인스 데이터 뷰어 플랫폼 (GIS 기반 RTSP 영상 분석 및 데이터 뷰어)</ul>
                                 <li>RabbitMQ Channel을 이용한 스레드별 Queue Event Consume</li>
-                                <li>FFmpeg을 이용해 RTSP Stream을 변환해 브라우저에 HLS로 스트리밍</li>
+                                <li>FFmpeg을 이용해 RTSP IP Cam Stream을 변환해 브라우저에 HLS로 분석영상 Streaming</li>
                                 <li>RabbitMQ Publisher를 만들어 부하테스트 용도의 시뮬레이터 개발</li>
                                 <li>Server Setting Shell Script 작성 (Ubuntu 22.04)</li>
-                                <li>DB 스키마, 초기 데이터 SQL 작성</li>
+                                <li>Redis를 이용한 시간대별 데이터 통계 처리</li>
+                                <li>DB 스키마, 초기 데이터 SQL 작성, 테이블 파티셔닝</li>
                             </SubTd>
                             <SubTd>
                                 <li>Spring Data JPA</li>
@@ -124,24 +125,23 @@ const Careers: React.FC = () => {
                         <tr>
                             <td><BaseBar num={100}/></td>
                             <SubTd>
-                                <ul>더현대 서울 흡연실 출입통제 시스템 개발</ul>
-                                <li>흡연실로 들어가는 사람을 AI 엔진으로 감지</li>
-                                <li>감지한 이벤트 데이터를 Message Broker로 Consume</li>
-                                <li>Consume한 데이터를 프론트엔드와 웹소켓 통신을 통해 재실 인원 카운팅 & 표출</li>
+                                <ul>재실 인원 추정 시스템</ul>
+                                <li>특정 공간으로 들어가는 사람을 AI 엔진으로 감지하여 재실 인원 추정값 계산</li>
+                                <li>Consume한 이벤트 데이터를 프론트엔드와 웹소켓 통신을 통해 재실 인원 모니터링</li>
                             </SubTd>
                             <SubTd>
                                 <li>Spring Data JPA</li>
                                 <li>H2 DB Imbedded Mode</li>
                                 <li>Spring WebSocket</li>
-                                <li>Vanilla JS (axios, stomp)</li>
+                                <li>JavaScript</li>
                             </SubTd>
                         </tr>
 
                         <tr>
                             <td><BaseBar num={100}/></td>
                             <SubTd>
-                                <ul>노원구청 지능형 CCTV 활용 도시 안전 데이터 분석 시스템 개발</ul>
-                                <li>사거리, 자전거도로 등 특정 구역의 인원수 카운팅 및 DB 저장 프로그램 개발</li>
+                                <ul>지능형 CCTV 활용 도시 안전 데이터 분석 시스템</ul>
+                                <li>사거리, 자전거도로 등 특정 구역의 방향별 & 인원/차량 종류별 이용 수 카운팅 및 통계 처리</li>
                             </SubTd>
                             <SubTd>
                                 <li>Spring Data JPA</li>
@@ -153,8 +153,8 @@ const Careers: React.FC = () => {
                         <tr>
                             <td><BaseBar num={100}/></td>
                             <SubTd>
-                                <ul>LG CNS Cafeteria 대기열 시스템 개발</ul>
-                                <li>카페테리아의 줄마다 영역을 분리하고 영역당 인원수를 특정 시간마다 Rest API로 전송</li>
+                                <ul>대기열 점유 모니터링 시스템</ul>
+                                <li>특정 대기열의 특정 공간의 영역별 인원 수 점유율 추정치 계산 및 모니터링 시스템 개발</li>
                             </SubTd>
                             <SubTd>
                                 <li>Spring Data JPA</li>
